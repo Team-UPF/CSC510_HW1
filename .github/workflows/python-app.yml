@@ -24,8 +24,15 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest
+        pip install pytest coverage codecov
 
     - name: Run tests
       run: |
-        pytest
+        coverage run -m pytest
+        coverage report
+        coverage html
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        token: ${{ secrets.5cdedf67-5cd5-481e-b5f2-4a7b92c52060 }}
