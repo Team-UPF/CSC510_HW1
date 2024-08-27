@@ -5,3 +5,5 @@
 ![Platform](https://img.shields.io/badge/platform-linux-lightgrey)
 
 [![Python application](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml/badge.svg)](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml)
+
+[![codecov](https://codecov.io/gh/Team-UPF/CSC510_HW1/graph/badge.svg?token=DTC62QRAI3)](https://codecov.io/gh/Team-UPF/CSC510_HW1)
