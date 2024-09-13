@@ -28,15 +28,15 @@ jobs:
 
     - name: Run AutoPep8
       run: |
-        autopep8 --in-place --aggressive --aggressive hw2_debugging.py rand.py
+        autopep8 --in-place --aggressive --aggressive hw2/hw2_debugging.py hw2/rand.py
 
     - name: Run Pyflakes
       run: |
-        pyflakes hw2_debugging.py rand.py
+        pyflakes hw2/hw2_debugging.py hw2/rand.py
 
     - name: Run Pylint
       run: |
-        pylint hw2_debugging.py rand.py
+        pylint hw2/hw2_debugging.py hw2/rand.py
 
     - name: Run tests
       run: |
@@ -67,12 +67,12 @@ jobs:
 
     - name: Run AutoPep8
       run: |
-        autopep8 --in-place --aggressive --aggressive hw2_debugging.py rand.py
+        autopep8 --in-place --aggressive --aggressive hw2/hw2_debugging.py hw2/rand.py
 
     - name: Run Pyflakes
       run: |
-        pyflakes hw2_debugging.py rand.py
+        pyflakes hw2/hw2_debugging.py hw2/rand.py
 
     - name: Run Pylint
       run: |
-        pylint hw2_debugging.py rand.py
+        pylint hw2/hw2_debugging.py hw2/rand.py
