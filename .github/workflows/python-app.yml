@@ -40,7 +40,7 @@ jobs:
 
     - name: Run Tests with Pytest
       run: |
-        pytest hw2/hw2_debugging.py hw2/rand.py
+        pytest hw2/hw2_debugging.py
     - name: Run tests
       run: |
         coverage run -m pytest
