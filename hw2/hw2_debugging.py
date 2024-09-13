@@ -6,6 +6,7 @@ to sort an array using the divide and conquer method.
 
 import rand
 
+
 def merge_sort(input_arr):
     """
     Sorts an array using the merge sort algorithm.
@@ -18,8 +19,7 @@ def merge_sort(input_arr):
     """
     if len(input_arr) <= 1:
         return input_arr
-
-    half = len(input_arr) // 2
+    half =len(input_arr) // 2
 
     # Split and recursively merge sort
     left_half = merge_sort(input_arr[:half])
@@ -27,7 +27,6 @@ def merge_sort(input_arr):
 
     # Combine sorted halves
     return recombine(left_half, right_half)
-
 def recombine(left_arr, right_arr):
     """
     Merges two sorted lists into a single sorted list.
@@ -56,6 +55,7 @@ def recombine(left_arr, right_arr):
     merged.extend(right_arr[right_index:])
 
     return merged
+
 
 # Example array to test
 arr = rand.random_array([None] * 20)
