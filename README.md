@@ -13,7 +13,6 @@
 
 ### Workflow Badges
 
-- **Overall Workflow**
 ![Python CI](https://github.com/ncsu-se/SE-Fall24-HW2/actions/workflows/main.yml/badge.svg)
 ![Pylint Score](https://img.shields.io/badge/pylint-score--100%25-brightgreen)
 ![Pyflakes Status](https://img.shields.io/badge/pyflakes-pass-brightgreen)
