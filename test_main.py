@@ -6,5 +6,5 @@ def test_add_numbers():
     assert add_numbers(5, 5) == 10
 
 def test_subtract_numbers():
-    # This test is intentionally made to fail
-    assert subtract_numbers(10, 5) == 0
+    # This test is intentionally made to pass now
+    assert subtract_numbers(10, 5) == 5
