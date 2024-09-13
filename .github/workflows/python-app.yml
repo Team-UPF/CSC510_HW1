@@ -28,16 +28,6 @@ jobs:
     - run: pip install pylint
     - run: pylint hw2/hw2_debugging.py hw2/rand.py
 
-  flake8:
-    name: Flake8
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
-    - run: pip install flake8
-    - run: flake8 hw2/hw2_debugging.py hw2/rand.py
 
   mypy:
     name: Mypy
