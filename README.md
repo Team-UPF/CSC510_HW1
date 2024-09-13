@@ -16,16 +16,13 @@
   ![Python CI](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml/badge.svg)
 
 - **AutoPep8**
-  [![AutoPep8](https://img.shields.io/github/workflow/status/Team-UPF/CSC510_HW1/autopep8?label=autopep8&style=flat-square)](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml)
+  ![AutoPep8](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml/badge.svg?job=autopep8)
 
 - **Pylint**
-  [![Pylint](https://img.shields.io/github/workflow/status/Team-UPF/CSC510_HW1/pylint?label=pylint&style=flat-square)](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml)
-
-<!-- - **Flake8**
-  [![Flake8](https://img.shields.io/github/workflow/status/Team-UPF/CSC510_HW1/flake8?label=flake8&style=flat-square)](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml) -->
+  ![Pylint](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml/badge.svg?job=pylint)
 
 - **Mypy**
-  [![Mypy](https://img.shields.io/github/workflow/status/Team-UPF/CSC510_HW1/mypy?label=mypy&style=flat-square)](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml)
+  ![Mypy](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml/badge.svg?job=mypy)
 
 - **Coverage**
   ![Coverage](https://img.shields.io/codecov/c/github/Team-UPF/CSC510_HW1)
