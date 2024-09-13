@@ -15,5 +15,6 @@ print("The sum is:", result_add)
 result_subtract = subtract_numbers(10, 5)
 print("The difference is:", result_subtract)
 
-# Intentional error: undefined variable
-print("This will cause an error: " + undefined_variable)
+# Define the variable
+undefined_variable = "some_value"
+print("This will now work: " + undefined_variable)
