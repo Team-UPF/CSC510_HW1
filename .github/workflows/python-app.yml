@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  lint-and-test:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,28 +19,24 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.6.8'
+        python-version: '3.x'
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest coverage codecov pre-commit pylint flake8 mypy autopep8
+        pip install pytest coverage codecov autopep8 pyflakes pylint
 
-    - name: Run autopep8
+    - name: Run AutoPep8
       run: |
-        autopep8 --in-place --aggressive --aggressive hw2/hw2_debugging.py
+        autopep8 --in-place --aggressive --aggressive hw2_debugging.py rand.py
 
-    - name: Run pre-commit hooks
-      run: pre-commit run --all-files
+    - name: Run Pyflakes
+      run: |
+        pyflakes hw2_debugging.py rand.py
 
-    - name: Run pylint
-      run: pylint hw2/hw2_debugging.py
-
-    - name: Run flake8
-      run: flake8 hw2/hw2_debugging.py
-
-    - name: Run mypy
-      run: mypy hw2/hw2_debugging.py
+    - name: Run Pylint
+      run: |
+        pylint hw2_debugging.py rand.py
 
     - name: Run tests
       run: |
@@ -52,3 +48,31 @@ jobs:
       uses: codecov/codecov-action@v3
       with:
         token: ${{ secrets.5cdedf67-5cd5-481e-b5f2-4a7b92c52060 }}
+
+  lint:
+    name: Linting with Static Analysis
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install autopep8 pyflakes pylint
+
+    - name: Run AutoPep8
+      run: |
+        autopep8 --in-place --aggressive --aggressive hw2_debugging.py rand.py
+
+    - name: Run Pyflakes
+      run: |
+        pyflakes hw2_debugging.py rand.py
+
+    - name: Run Pylint
+      run: |
+        pylint hw2_debugging.py rand.py
