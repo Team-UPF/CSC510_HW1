@@ -28,6 +28,17 @@ jobs:
     - run: pip install pylint
     - run: pylint hw2/hw2_debugging.py hw2/rand.py
 
+  flake8:
+    name: Flake8
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - run: pip install flake8
+    - run: flake8 hw2/hw2_debugging.py hw2/rand.py
+
   mypy:
     name: Mypy
     runs-on: ubuntu-latest
@@ -38,6 +49,17 @@ jobs:
         python-version: '3.x'
     - run: pip install mypy
     - run: mypy hw2/hw2_debugging.py hw2/rand.py
+
+  pytest:
+    name: Pytest
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - run: pip install pytest
+    - run: pytest hw2/test_merge_sort.py
 
   test:
     name: Test
