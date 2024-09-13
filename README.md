@@ -21,8 +21,14 @@
 - **Pylint**
   ![Pylint](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml/badge.svg?job=pylint)
 
+- **Flake8**
+  ![Flake8](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml/badge.svg?job=flake8)
+
 - **Mypy**
   ![Mypy](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml/badge.svg?job=mypy)
+
+- **Pytest**
+  ![Pytest](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml/badge.svg?job=pytest)
 
 - **Coverage**
   ![Coverage](https://img.shields.io/codecov/c/github/Team-UPF/CSC510_HW1)
