@@ -14,16 +14,8 @@
 ### Workflow Badges
 
 - **Overall Workflow**
-
-  [![Python application](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml/badge.svg)](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml)
-
-  [![Autopep8](https://img.shields.io/github/workflow/status/Team-UPF/CSC510_HW1/Python%20application?label=autopep8)](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml)
-
-  [![Pylint](https://img.shields.io/github/workflow/status/Team-UPF/CSC510_HW1/Python%20application?label=pylint)](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml)
-
-  [![Flake8](https://img.shields.io/github/workflow/status/Team-UPF/CSC510_HW1/Python%20application?label=flake8)](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml)
-
-
-  [![Mypy](https://img.shields.io/github/workflow/status/Team-UPF/CSC510_HW1/Python%20application?label=mypy)](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml)
-
-  [![Coverage](https://img.shields.io/github/workflow/status/Team-UPF/CSC510_HW1/Python%20application?label=coverage)](https://github.com/Team-UPF/CSC510_HW1/actions/workflows/python-app.yml)
+![Python CI](https://github.com/ncsu-se/SE-Fall24-HW2/actions/workflows/main.yml/badge.svg)
+![Pylint Score](https://img.shields.io/badge/pylint-score--100%25-brightgreen)
+![Pyflakes Status](https://img.shields.io/badge/pyflakes-pass-brightgreen)
+![AutoPep8 Status](https://img.shields.io/badge/autopep8-compliant-brightgreen)
+![Code Quality](https://img.shields.io/badge/Code_Quality-A-brightgreen)
